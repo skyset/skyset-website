@@ -11,23 +11,9 @@
 
 <body>
   <div id="wrapper">
-    <header>
-      <a href="index.html"></a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li class="dropdown">
-            <a href="services.html">Services</a>
-            <div>
-              <a href="branding.html">Branding</a>
-              <a href="illustration.html">Illustration</a>
-            </div>
-          </li>
-        </ul>
-      </nav>
-    </header>
+  <?php
+      include 'sections/header.php';
+    ?>
     <main>
       <div id="about" class="hero">
         <h2>Contact</h2>
@@ -50,7 +36,7 @@
         Required fields are marked with <b>*</b>.
       </p>
 
-      <form action="mailto:samuel.tyler.17@cnu.edu" method="post" enctype="text/plain">
+      <form action="mailto:sam@skyset.page" method="post" enctype="text/plain">
         <label for="name"><b>*</b> Name: </label>
         <input type="text" name="name" placeholder="Name" id="name" required>
 
@@ -61,8 +47,6 @@
         <div id="reason">
           <input type="radio" name="reason" value="Commission" id="commission">
           <label for="commission">Commission</label>
-          <input type="radio" name="reason" value="Hiring" id="hiring">
-          <label for="hiring">Job opportunity</label>
           <input type="radio" name="reason" value="Business" id="business">
           <label for="business">Business enquiries</label>
         </div>
@@ -77,10 +61,9 @@
       </form>
 
     </main>
-    <footer>
-      Copyright &copy; 2020 Skyset Multimedia<br>
-      <a href="mailto:samuel.tyler.17@cnu.edu">samuel.tyler.17@cnu.edu</a>
-    </footer>
+    <?php
+      include 'sections/footer.php';
+    ?>
   </div>
 </body>
 

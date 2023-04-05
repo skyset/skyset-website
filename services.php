@@ -11,23 +11,9 @@
 
 <body>
   <div id="wrapper">
-    <header>
-      <a href="index.html"></a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li class="dropdown">
-            <a href="services.html">Services</a>
-            <div>
-              <a href="branding.html">Branding</a>
-              <a href="illustration.html">Illustration</a>
-            </div>
-          </li>
-        </ul>
-      </nav>
-    </header>
+  <?php
+      include 'sections/header.php';
+    ?>
     <main>
       <div id="about" class="hero">
         <h2>Services</h2>
@@ -50,10 +36,9 @@
     <h3>Pricing</h3>
 
     <p>Pricing is decided on a <i>case-by-case</i> basis. <br><br> We require upfront payment of at least half of the agreed upon cost. <br><br> We reserve the right to refuse commissions at any point throughout the commission process.</p>
-    <footer>
-      Copyright &copy; 2020 Skyset Multimedia<br>
-      <a href="mailto:samuel.tyler.17@cnu.edu">samuel.tyler.17@cnu.edu</a>
-    </footer>
+    <?php
+      include 'sections/footer.php';
+    ?>
   </div>
 </body>
 
