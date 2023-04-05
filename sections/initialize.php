@@ -1,13 +1,31 @@
-<!-- constants -->
+<?php
 
-$accepted_pagenames = array(
+// constants
+
+$ACCEPTED_PAGENAMES = array(
         "index",
         "about",
-        "contact,
+        "contact",
         "services",
         "branding",
         "illustration"
         );
+
+function init_pagecheck($pagename) {
+    /**
+     * Checks the given pagename against the list of accepted pages
+     * If invalid, issues a 404 redirect and kills this script
+     */
+    
+    if (!in_array($pagename, $accepted_pagenames)) {
+        header("HTTP/1.1 404 Not Found");
+        include('404.php');
+        die();
+    }
+}
+
+
+?>
 <head>
     <!-- Basic setup information for every page -->
 
@@ -15,20 +33,5 @@ $accepted_pagenames = array(
     <meta charset="utf-8">
     <meta name="description" content="Samuel Tyler is a Virginia-based design agency specializing in digital media.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-/** checks that current page is in the list of accepted pages,
-*   and redirects to the 404 if not.
-*
-*/
-
-function init_pagecheck($pagename) {
-    
-    if (!in_array($pagename, $accepted_pagenames);) {
-        header("HTTP/1.1 404 Not Found");
-        include('404.php');
-        die();
-    }
-}
-
 <!-- close header -->
 </head>
