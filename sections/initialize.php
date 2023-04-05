@@ -8,8 +8,6 @@ $accepted_pagenames = array(
         "branding",
         "illustration"
         );
-
-echo '
 <head>
     <!-- Basic setup information for every page -->
 
@@ -33,6 +31,4 @@ function init_pagecheck($pagename) {
 }
 
 <!-- close header -->
-echo '
 </head>
-';

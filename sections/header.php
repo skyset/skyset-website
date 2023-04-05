@@ -1,4 +1,3 @@
-echo '
 <header>
       <a href="index.html"></a>
       <nav>
@@ -16,4 +15,3 @@ echo '
         </ul>
       </nav>
     </header>
-';
