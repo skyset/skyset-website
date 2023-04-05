@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link href="css/main.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="description" content="Skyset Multimedia is a Virginia-based design agency specializing in digital media.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skyset Multimedia - Contact</title>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <a href="index.html"></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="dropdown">
+            <a href="services.html">Services</a>
+            <div>
+              <a href="branding.html">Branding</a>
+              <a href="illustration.html">Illustration</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="about" class="hero">
+        <h2>Contact</h2>
+        <img src="images/divider.svg" alt="divider" id="divider">
+      </div>
+
+      <h3>Social Media</h3>
+
+      <ul id="socials">
+        <li><a href="https://dribbble.com/skyset"><img src="images/dribbble.png" alt="Dribbble"><div>Dribbble</div></a></li>
+        <li><a href="https://www.behance.net/skyset"><img src="images/behance.png" alt="Behance"><div>Behance</div></a></li>
+        <li><a href="https://www.linkedin.com/in/samuel-t-b72b55113/"><img src="images/linkedin.png" alt="LinkedIn"><div>LinkedIn</div></a></li>
+      </ul>
+
+      <h3>Mail</h3>
+
+      <p>
+        Interested in working together?<br>
+        <i>Drop us a message below</i>.<br><br>
+        Required fields are marked with <b>*</b>.
+      </p>
+
+      <form action="mailto:samuel.tyler.17@cnu.edu" method="post" enctype="text/plain">
+        <label for="name"><b>*</b> Name: </label>
+        <input type="text" name="name" placeholder="Name" id="name" required>
+
+        <label for="email"><b>*</b> Email: </label>
+        <input type="email" name="email" placeholder="Email" id="email" required>
+
+        <span>Reason for contact:</span>
+        <div id="reason">
+          <input type="radio" name="reason" value="Commission" id="commission">
+          <label for="commission">Commission</label>
+          <input type="radio" name="reason" value="Hiring" id="hiring">
+          <label for="hiring">Job opportunity</label>
+          <input type="radio" name="reason" value="Business" id="business">
+          <label for="business">Business enquiries</label>
+        </div>
+
+          <label for="details"><b>*</b> Details:</label>
+          <textarea name="details" rows="8" placeholder="Details" id="details" required></textarea>
+
+        <div id="buttons">
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+        </div>
+      </form>
+
+    </main>
+    <footer>
+      Copyright &copy; 2020 Skyset Multimedia<br>
+      <a href="mailto:samuel.tyler.17@cnu.edu">samuel.tyler.17@cnu.edu</a>
+    </footer>
+  </div>
+</body>
+
+</html>

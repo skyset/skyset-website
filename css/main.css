@@ -1,0 +1,424 @@
+::selection {
+  background-color: #EE0000;
+  color: #000000;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #000000;
+  font-family: "Arial Black", Arial, sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+#wrapper {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000000;
+}
+
+header {
+  display: grid;
+  align-content: center;
+  grid-template-columns: 1fr 2fr;
+  min-height: 80px;
+  background-color: black;
+}
+
+header>a {
+  /*fullLogo*/
+  grid-column: 1;
+  height: 100%;
+  background-image: url(../images/logo.svg);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+nav>ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row;
+  list-style-type: none;
+}
+
+nav li {
+  flex: auto;
+  text-align: center;
+}
+
+a {
+  color: #FF0000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFFFFF;
+}
+
+a:visited {
+  color: #CC0000;
+}
+
+nav a {
+  display: inline-block;
+  width: 100%;
+  padding: 1em 0;
+  font-size: 0.9em;
+  text-decoration: none;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  transition: background-color 0.2s;
+}
+
+nav a:hover {
+  background-color: #330000;
+  color: #FF3333;
+}
+
+nav .dropdown {
+  position: relative;
+}
+
+nav .dropdown div {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: #000;
+  z-index: 20;
+}
+
+nav .dropdown:hover div {
+  display: flex;
+  flex-flow: column;
+}
+
+nav .dropdown div a {
+  border-top: 1px solid #770000;
+}
+
+nav .dropdown>a:after {
+  content: " ▼";
+  font-size: 0.7em;
+  color: #CC0000;
+}
+
+i {
+  background-image: linear-gradient(#000000 60%, #550000 60%, #550000 100%);
+}
+
+p {
+  width: 40%;
+  font-size: 1.2em;
+  text-align: center;
+  font-family: "Times", serif;
+  margin: 1em auto;
+  line-height: 1.4em;
+  outline: 3px double #550000;
+  padding: 30px;
+}
+
+main {
+  font-family: Times, serif;
+}
+
+.hero {
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  margin-bottom: 4em;
+}
+
+h2 {
+  font-family: "Arial Black", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h3 {
+  font-family: "Arial Black", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1.2em;
+  padding: 1em;
+}
+
+h4 {
+  font-family: "Arial Black", sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.options {
+  margin: 2em auto;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.options a {
+  flex: 1;
+  text-align: center;
+}
+
+.options h4 {
+  padding: 4em 0;
+  color: #FFFFFF;
+  outline: 3px double #AA0000;
+  outline-offset: 3px;
+  background-size: 90%;
+  background-position: center;
+  transition-property: background-size, outline-offset;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+#illustration {
+  background-image: url(../images/illustration.png);
+}
+
+#branding {
+  background-image: url(../images/branding.png);
+}
+
+.options h4:hover {
+  background-size: 110%;
+  outline-offset: 10px;
+  box-shadow: 0 0 80px #440000;
+}
+
+.hero h3 {
+  color: #CC0000;
+  padding: 0;
+}
+
+h2:before, h2:after {
+  content: "—-—";
+  color: #550000;
+  padding: 0 3% 0 3%;
+}
+
+h3:before, h3:after {
+  content: "—";
+  color: #550000;
+  padding: 0 5% 0 5%;
+}
+
+#index {
+  background-image: url(../images/background.png);
+  background-size: 130%;
+  padding: 13%;
+}
+
+#about {
+  background-image: url(../images/background2.png);
+  background-size: 100%;
+  padding: 5%;
+}
+
+#portrait {
+  background-image: url(../images/portrait.jpg);
+}
+
+#divider {
+  position: absolute;
+  width: 50%;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  transform: translateY(50%);
+}
+
+#logo {
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#socials {
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+  width: 100%;
+  padding-left: 0;
+  margin: 0 auto 0 auto;
+  max-width: 40%;
+  font-family: "Arial Black", Arial, sans-serif;
+  font-weight: bolder;
+}
+
+#socials li {
+  max-width: 200px;
+  flex: 1;
+}
+
+#socials a {
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 0.7em;
+}
+
+#socials a:hover {
+  color: #FFFFFF;
+}
+
+#socials img {
+  max-width: 35px;
+  margin: 10px 0 10px 0;
+}
+
+form {
+  font-family: Arial, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 1em;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid #330000;
+  padding: 2em;
+  align-items: center;
+}
+
+form input::placeholder, form textarea::placeholder {
+  color: #AA0000
+}
+
+b {
+  color: #FF0000;
+}
+
+#reason {
+  display: grid;
+  grid-template-columns: 3em 3fr;
+  grid-row-gap: 5px;
+}
+
+#buttons {
+  grid-column: 2 / 3;
+  display: flex;
+  gap: 1em;
+}
+
+input[type=text], input[type=email], textarea {
+  padding: 10px;
+  background-color: #110000;
+  border: 1px solid #770000;
+  color: white;
+  resize: vertical;
+  min-height: 2em;
+}
+
+input[type=submit], input[type=reset] {
+  color: #FFFFFF;
+  padding: 10px;
+  background-color: #550000;
+  border: 1px solid #FF0000;
+  flex: 1;
+}
+
+footer {
+  font-family: Times, serif;
+  font-variant: small-caps;
+  background-color: #000000;
+  padding: 2em 0 2em 0;
+  margin-top: 3em;
+  text-align: center;
+  font-size: 0.9em;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  #wrapper {
+    width: 100%;
+  }
+
+  #logo {
+    width: 25%;
+  }
+
+  header {
+    display: flex;
+    flex-flow: column;
+  }
+
+  header>a {
+    height: 40px;
+    margin: 10px 0 10px 0;
+    background-size: contain;
+    background-position: center;
+  }
+
+  nav ul {
+    margin: 10px auto 10px auto;
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  #logo {
+    width: 40%;
+  }
+
+  #divider {
+    width: 70%;
+  }
+
+  h3 {
+    padding-bottom: 2px;
+  }
+
+  h3:before, h3:after {
+    content: "";
+  }
+
+  p {
+    font-size: 1.25em;
+  }
+
+  nav ul {
+    flex-flow: column;
+  }
+
+  nav li {
+    border-top: 1px solid #550000;
+  }
+
+  nav .dropdown:hover div {
+    display: none;
+  }
+
+  nav .dropdown>a:after {
+    content: ""
+  }
+
+  .options {
+    width: 60%;
+    flex-flow: column;
+    margin: 0 auto;
+  }
+
+  .options a {
+    width: 100%;
+  }
+}
