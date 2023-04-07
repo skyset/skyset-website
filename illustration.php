@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
+<?php include('sections/initialize.php');?>
+
 <head>
-  <link href="css/main.css" rel="stylesheet">
   <link href="css/figures.css" rel="stylesheet">
-  <meta charset="utf-8">
-  <meta name="description" content="Skyset Multimedia is a Virginia-based design agency specializing in digital media.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skyset Multimedia - Illustration</title>
+  <title>Skyset - Illustration</title>
 </head>
 
 <body>

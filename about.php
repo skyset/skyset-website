@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
+<?php include('sections/initialize.php');?>
 <head>
-  <link href="css/figures.css" rel="stylesheet">
   <title>Skyset - About</title>
+  <link href="css/figures.css" rel="stylesheet">
 </head>
 
 <body>
