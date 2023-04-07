@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 
 <?php include('sections/initialize.php');?>
+<script src="https://www.google.com/recaptcha/api.js"></script>
 
 <head>
   <title>Skyset - Contact</title>
@@ -53,7 +54,7 @@
           <textarea name="details" rows="8" placeholder="Details" id="details" required></textarea>
 
         <div id="buttons">
-          <input type="submit" value="Submit">
+          <input type="submit" value="Submit" class="g-recaptcha" data-sitekey="6LfIJF4lAAAAAIUqw_l4fZiHaJWlHEkI8azBJ2Av" data-callback='onSubmit' data-action='submit'>
           <input type="reset" value="Reset">
         </div>
       </form>
@@ -63,6 +64,13 @@
       include 'sections/footer.php';
     ?>
   </div>
+  <script>
+    function onSubmit(token) {
+      document.getElementById("demo-form").submit();
+    }
+  </script>
 </body>
+
+
 
 </html>
