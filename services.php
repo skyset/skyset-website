@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<?php include('sections/initialize.php');?>
-
 <head>
+  <?php include('sections/initialize.php');?>
   <title>Skyset - Services</title>
 </head>
 

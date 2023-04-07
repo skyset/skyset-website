@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-    <?php include 'sections/initialize.php'?>
     <head>
+        <?php include 'sections/initialize.php'?>
         <title>Skyset - 404</title>
     </head>
     <body>

@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<?php include('sections/initialize.php');?>
+
 
 <head>
+  <?php include('sections/initialize.php');?>
   <link href="css/figures.css" rel="stylesheet">
   <title>Skyset - Branding</title>
 </head>
 
 <body>
   <div id="wrapper">
-  <?php
-      include 'sections/header.php';
-    ?>
+  <?php include 'sections/header.php'; ?>
     <main>
       <div id="about" class="hero">
         <h2>Portfolio</h2>

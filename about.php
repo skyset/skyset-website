@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<?php include('sections/initialize.php');?>
+
 <head>
+  <?php include('sections/initialize.php');?>
   <title>Skyset - About</title>
   <link href="css/figures.css" rel="stylesheet">
 </head>
 
 <body>
   <div id="wrapper">
-    <?php
-      include 'sections/header.php';
-    ?>
+    <?php include 'sections/header.php';?>
     <main>
       <div id="about" class="hero">
         <h2>About</h2>
@@ -34,8 +33,8 @@
       </figure>
     </main>
     <?php
-      include 'sections/footer.php';
-    ?>
+  include 'sections/footer.php';
+?>
   </div>
 </body>
 

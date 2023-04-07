@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<?php include('sections/initialize.php');?>
 <script src="https://www.google.com/recaptcha/api.js"></script>
 
 <head>
+  <?php include('sections/initialize.php');?>
   <title>Skyset - Contact</title>
 </head>
 
 <body>
   <div id="wrapper">
-  <?php
-      include 'sections/header.php';
-    ?>
+  <?php include 'sections/header.php'; ?>
     <main>
       <div id="about" class="hero">
         <h2>Contact</h2>
@@ -31,7 +29,7 @@
 
       <p>
         Interested in working together?<br>
-        <i>Drop us a message below</i>.<br><br>
+        <i>Drop me a message below</i>.<br><br>
         Required fields are marked with <b>*</b>.
       </p>
 
