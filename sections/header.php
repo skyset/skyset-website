@@ -1,14 +1,14 @@
 <!-- Hamburger Menu -->
 <button class='toggler'>
   <span class='menu_icons'>
-    <div>≡</div>
-    <div>x</div>
+    <div id='hamburger_icon'>≡</div>
+    <div id='hamburger_x'>x</div>
   </span>
 </button>
 
 <!-- Header -->
 <header>
-  <a id="logo" href="index.html"></a>
+  <div id="headerbg"><a id="logo" href="index.html"></a></div>
   <nav>
     <ul>
       <li><a href="index.php">Home</a></li>
@@ -23,5 +23,4 @@
       </li>
     </ul>
   </nav>
-  <div id="hamburger_background"></div>
 </header>

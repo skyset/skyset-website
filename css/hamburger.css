@@ -11,8 +11,9 @@
         right: 0;
         z-index: 99999;
         cursor: pointer;
-        height: 72px;
-        width: 72px;
+        height: 60px;
+        width: 60px;
+        margin: 6px;
         border: none;
         background-color: #000000;
         color: #FFFFFF;
@@ -20,12 +21,18 @@
         justify-content: center;
         align-items: center;
         font-size: 2em;
-        transition: color 0.2s, background-color 0.2s;
+        outline: 0px;
+        transition: color 0.2s, background-color 0.2s, outline 0.2s;
     }
-    
     
     .toggler:hover {
         background-color: #550000;
+        outline: 1px solid #AA0000;
+    }
+
+    .toggler.toggled {
+        background-color: #CC0000;
+        outline: 6px solid #CC0000;
     }
     
     .menu_icons {
@@ -39,6 +46,11 @@
         justify-content: space-around;
         align-items: center;
         transition: left 0.2s, right 0.2s;
+    }
+
+    #hamburger_x {
+        position: relative;
+        bottom: 3px;
     }
     
     .toggler.toggled .menu_icons {
