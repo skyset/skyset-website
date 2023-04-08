@@ -14,7 +14,7 @@
     ?>
     <main>
       <div id="index" class="hero">
-        <img src="images/fullLogo.svg" alt="Skyset Multimedia" id="logo">
+        <img src="images/fullLogo.svg" alt="Skyset Multimedia" id="fulllogo">
         <img src="images/divider.svg" alt="Page divider" id="divider">
       </div>
       <p>Freelance graphic design and illustration with one key principle &#8212;

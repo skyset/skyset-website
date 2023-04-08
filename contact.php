@@ -29,31 +29,32 @@
 
       <p>
         Interested in working together?<br>
-        <i>Drop me a message below</i>.<br><br>
-        Required fields are marked with <b>*</b>.
+        <i>Drop me a message below</i>.<br>
       </p>
 
       <form action="mailto:sam@skyset.page" method="post" enctype="text/plain">
-        <label for="name"><b>*</b> Name: </label>
-        <input type="text" name="name" placeholder="Name" id="name" required>
-
-        <label for="email"><b>*</b> Email: </label>
-        <input type="email" name="email" placeholder="Email" id="email" required>
-
-        <span>Reason for contact:</span>
-        <div id="reason">
-          <input type="radio" name="reason" value="Commission" id="commission">
-          <label for="commission">Commission</label>
-          <input type="radio" name="reason" value="Business" id="business">
-          <label for="business">Business enquiries</label>
+        <div class="field">
+          <label for="name"><b>*</b> Name</label>
+          <input type="text" name="name" placeholder="Name" id="name" required>
         </div>
 
-          <label for="details"><b>*</b> Details:</label>
-          <textarea name="details" rows="8" placeholder="Details" id="details" required></textarea>
+        <div class="field">
+          <label for="email"><b>*</b>  Email</label>
+          <input type="email" name="email" placeholder="email@email.com" id="email" required>
+        </div>
 
-        <div id="buttons">
-          <input type="submit" value="Submit" class="g-recaptcha" data-sitekey="6LfIJF4lAAAAAIUqw_l4fZiHaJWlHEkI8azBJ2Av" data-callback='onSubmit' data-action='submit'>
-          <input type="reset" value="Reset">
+        <div class="field">
+          <label for="details"><b>*</b>  Details</label>
+          <textarea name="details" rows="10" placeholder="Details" id="details" required></textarea>
+        </div>  
+        <div class="field">
+          <span><b>*</b> denotes a required field.</span>
+        </div>
+        <div class="field">
+          <div id="buttons">
+            <input type="submit" value="Submit" class="g-recaptcha" data-sitekey="6LfIJF4lAAAAAIUqw_l4fZiHaJWlHEkI8azBJ2Av">
+            <input type="reset" value="Reset">
+          </div>
         </div>
       </form>
 
@@ -62,11 +63,6 @@
       include 'sections/footer.php';
     ?>
   </div>
-  <script>
-    function onSubmit(token) {
-      document.getElementById("demo-form").submit();
-    }
-  </script>
 </body>
 
 

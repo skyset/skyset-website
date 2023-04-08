@@ -1,5 +1,14 @@
+<!-- Hamburger Menu -->
+<button class='toggler'>
+  <span class='menu_icons'>
+    <div>≡</div>
+    <div>x</div>
+  </span>
+</button>
+
+<!-- Header -->
 <header>
-  <a href="index.html"></a>
+  <a id="logo" href="index.html"></a>
   <nav>
     <ul>
       <li><a href="index.php">Home</a></li>
@@ -14,4 +23,5 @@
       </li>
     </ul>
   </nav>
+  <div id="hamburger_background"></div>
 </header>
