@@ -23,6 +23,7 @@
         <li><a href="https://dribbble.com/skyset"><img src="images/dribbble.png" alt="Dribbble"><div>Dribbble</div></a></li>
         <li><a href="https://www.behance.net/skyset"><img src="images/behance.png" alt="Behance"><div>Behance</div></a></li>
         <li><a href="https://www.linkedin.com/in/samuel-t-b72b55113/"><img src="images/linkedin.png" alt="LinkedIn"><div>LinkedIn</div></a></li>
+        <li><a href="https://www.twitter.com/samskyset/"><img src="images/twitter.png" alt="twitter"><div>Twitter</div></a></li>
       </ul>
 
       <h3>Mail</h3>

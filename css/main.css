@@ -8,6 +8,8 @@
   color: #000000;
 }
 
+/* base-level stuff */
+
 body {
   box-sizing: border-box;
   background-color: #000000;
@@ -34,7 +36,7 @@ header {
   margin: 10px 0 10px 0;
 }
 
-#headerbg {
+.headerbg {
   grid-column: 1;
   width: 100%;
 }
@@ -127,7 +129,7 @@ nav .dropdown>a:after {
   font-size: 1em;
   color: #CC0000;
   position: absolute;
-  right: 30px;
+  right: 20px;
 }
 
 /* default elements across all pages */
@@ -137,28 +139,43 @@ i {
 }
 
 p {
-  width: 40%;
+  box-sizing: content-box;
+  width: 60%;
   font-size: 1.2em;
   text-align: center;
   font-family: "Work Sans", sans-serif;
   margin: 1em auto;
   line-height: 1.4em;
   outline: 1px solid #550000;
-  padding: 30px;
+  padding: 15px;
+}
+
+main * p {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  font-size: 0.8em;
+  padding: 10px;
 }
 
 main {
   font-family: "Work Sans", serif;
+  max-width: 100%;
+  display: flex;
+  flex-flow: column;
 }
 
 .hero {
+  justify-content: space-around;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
   display: flex;
+  flex-flow: column;
   align-items: center;
   margin-bottom: 4em;
   min-height: 150px;
+  max-height: 150px;
 }
 
 h2 {
@@ -167,6 +184,7 @@ h2 {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  font-size: 2.5em;
 }
 
 h3 {
@@ -175,7 +193,7 @@ h3 {
   text-align: center;
   color: #FFFFFF;
   font-size: 1.2em;
-  padding: 1em;
+  margin: 1em 0;
 }
 
 h4 {
@@ -237,14 +255,12 @@ h2:before,
 h2:after {
   content: "—";
   color: #550000;
-  padding: 0 3% 0 3%;
 }
 
 h3:before,
 h3:after {
   content: "—";
   color: #550000;
-  padding: 0 5% 0 5%;
 }
 
 #index {
@@ -262,7 +278,12 @@ h3:after {
 }
 
 #portrait {
-  background-image: url(../images/portrait.jpg);
+  display: block;
+  width: 50%;
+  background-image: cover no-repeat url(../images/portrait.jpg);
+  outline: 1px solid red;
+  padding: 5px;
+  vertical-align: middle;
 }
 
 #divider {
@@ -287,10 +308,9 @@ h3:after {
   display: flex;
   flex-flow: row wrap;
   list-style-type: none;
-  width: 100%;
+  width: 80%;
   padding-left: 0;
   margin: 0 auto 0 auto;
-  max-width: 40%;
   font-family: "Rowdies", sans-serif;
   font-weight: bolder;
 }
@@ -306,13 +326,16 @@ h3:after {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  color: #000000;
   text-transform: uppercase;
   font-size: 0.7em;
 }
 
-#socials a:hover {
+#socials a div {
   color: #FFFFFF;
+}
+
+#socials a:hover div {
+  color: red;
 }
 
 #socials img {
@@ -408,6 +431,7 @@ form input[type=reset] {
 /* footer */
 
 footer {
+  margin-top: 2em;
   background-color: #000000;
   height: 80px;
   text-align: center;
@@ -427,7 +451,7 @@ footer {
     flex-flow: column;
   }
 
-  #headerbg {
+  .headerbg {
     position: relative;
     width: 100%;
     height: 100%;
@@ -462,13 +486,38 @@ footer {
     left: 0;
     bottom: 0;
     margin: 0;
+    max-width: 100%;
     background: none;
+    visibility: hidden;
   }
 
-  #headerbg {
+  .headerbg {
     background: #000;
     z-index: 9996;
     height: fit-content;
+    visibility: visible;
+  }
+
+  .dropdownbg {
+    display: relative;
+    height: 100%;
+    top: 72px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    visibility: hidden;
+    clip-path: inset(0 0 100% 0 round 0);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .shown {
+    visibility: visible;
+    clip-path: inset(0 0 0 0 round 0);
+  }
+
+  .shown * {
+    visibility: visible;
   }
 
   #logo {
@@ -476,16 +525,8 @@ footer {
   }
 
   nav {
-    background: #000000;
     display: absolute;
     height: 100%;
-    clip-path: inset(0 0 100% 0 round 0);
-    overflow: scroll;
-    transition: clip-path 0.2s ease-in-out;
-  }
-
-  .shown {
-    clip-path: inset(0 0 0 0 round 0);
   }
 
   nav ul {

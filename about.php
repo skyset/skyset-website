@@ -23,12 +23,12 @@
       </p>
       <h3>Founder</h3>
 
-      <figure>
-        <div id="portrait" class="img"></div>
+      <figure class="large">
+        <img src="/images/portrait.jpg" id="portrait"/>
         <figcaption>
-          <i>Samuel Tyler</i> is a digital artist, frontend developer, and biochemist.<br><br>
-          He values simplicity and bold diversity, like the bowl cut he had in grade school (but you didn't hear that from me).<br><br>
-          Let's make something cool together!
+          <i>Samuel Tyler</i> has been a digital artist and software developer since 2014.<br><br>
+          <p>He values simplicity and bold diversity, like the bowl cut he had in grade school<br>(but you didn't hear that from me).</p>
+
         </figcaption>
       </figure>
     </main>
