@@ -1,3 +1,6 @@
+@import "../node_modules/@fontsource/rowdies/index.css";
+@import "../node_modules/@fontsource/work-sans/index.css";
+
 ::selection {
   background-color: #EE0000;
   color: #000000;
@@ -6,9 +9,10 @@
 body {
   box-sizing: border-box;
   background-color: #000000;
-  font-family: "Arial Black", Arial, sans-serif;
+  font-family: "Work Sans", sans-serif;
   color: #FFFFFF;
   margin: 0;
+  width: 100%;
 }
 
 #wrapper {
@@ -73,6 +77,12 @@ nav a {
   color: #FFFFFF;
   text-transform: uppercase;
   transition: background-color 0.2s;
+  font-family: "Rowdies", sans-serif;
+}
+
+
+nav a:visited {
+  color: #FFFFFF;
 }
 
 nav a:hover {
@@ -117,15 +127,15 @@ p {
   width: 40%;
   font-size: 1.2em;
   text-align: center;
-  font-family: "Times", serif;
+  font-family: "Work Sans", sans-serif;
   margin: 1em auto;
   line-height: 1.4em;
-  outline: 3px double #550000;
+  outline: 1px solid #550000;
   padding: 30px;
 }
 
 main {
-  font-family: Times, serif;
+  font-family: "Work , serif;
 }
 
 .hero {
@@ -136,7 +146,7 @@ main {
 }
 
 h2 {
-  font-family: "Arial Black", sans-serif;
+  font-family: "Rowdies", sans-serif;
   text-transform: uppercase;
   text-align: center;
   margin-left: auto;
@@ -144,7 +154,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Arial Black", sans-serif;
+  font-family: "Rowdies", sans-serif;
   text-transform: uppercase;
   text-align: center;
   color: #FFFFFF;
@@ -153,7 +163,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Arial Black", sans-serif;
+  font-family: "Rowdies", sans-serif;
   font-size: 1em;
   text-transform: uppercase;
   margin: 0;
@@ -176,7 +186,7 @@ h4 {
 .options h4 {
   padding: 4em 0;
   color: #FFFFFF;
-  outline: 3px double #AA0000;
+  outline: 1px solid #AA0000;
   outline-offset: 3px;
   background-size: 90%;
   background-position: center;
@@ -258,7 +268,7 @@ h3:before, h3:after {
   padding-left: 0;
   margin: 0 auto 0 auto;
   max-width: 40%;
-  font-family: "Arial Black", Arial, sans-serif;
+  font-family: "Work Sans", Arial, sans-serif;
   font-weight: bolder;
 }
 
@@ -338,7 +348,7 @@ input[type=submit], input[type=reset] {
 }
 
 footer {
-  font-family: Times, serif;
+  font-family: "Work , serif;
   font-variant: small-caps;
   background-color: #000000;
   padding: 2em 0 2em 0;
