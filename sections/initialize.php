@@ -11,7 +11,6 @@ because i love myself. Any code in here should generate head-only HTML
 
 // GET PAGE NAME
 $CURRENT_FILE_NAME = basename($_SERVER['SCRIPT_FILENAME']);
-
 ?>
 
 <!-- Basic setup information for every page -->
