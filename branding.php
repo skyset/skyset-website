@@ -33,9 +33,9 @@
         <?php
           ##  List of image filenames and alt text.
           $BRANDING_IMAGE_LIST = array(
-            "branding_annulus" => "Exploration of branding for a friend. Includes design process details.",
-            "branding_political" => "Sample branding and additional assets for a political party.",
-            "branding_unsion" => "Logo and sections of a website design for a graphic design team."
+            "branding_annulus" => "Annulus",
+            "branding_political" => "Political Party",
+            "branding_unsion" => "Unsion"
           );
           generate_portfolio_figures("./images/branding", $BRANDING_IMAGE_LIST);
         ?>

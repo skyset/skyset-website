@@ -11,6 +11,7 @@
   <div id="wrapper">
   <?php
       include 'sections/header.php';
+      include 'sections/portfolio.php';
     ?>
     <main>
       <div id="about" class="hero">
@@ -25,43 +26,19 @@
       </p>
 
       <div class="gallery">
-
-        <figure>
-          <div>
-            <a href="images/illustration_coffee.png"><img src="images/illustration_coffee.png" alt="Coffee Pop Art"></a>
-          </div>
-        </figure>
-
-        <figure>
-          <div>
-            <a href="images/illustration_flu.png"><img src="images/illustration_flu.png" alt="Flu"></a>
-          </div>
-        </figure>
-
-        <figure>
-          <div>
-            <a href="images/illustration_melon.png"><img src="images/illustration_melon.png" alt="Watermelon Ruins"></a>
-          </div>
-        </figure>
-
-        <figure>
-          <div>
-            <a href="images/illustration_oddity.png"><img src="images/illustration_oddity.png" alt="Oddity"></a>
-          </div>
-        </figure>
-
-        <figure>
-          <div>
-            <a href="images/illustration_petscop.png"><img src="images/illustration_petscop.png" alt="Petscop"></a>
-          </div>
-        </figure>
-
-        <figure>
-          <div>
-            <a href="images/illustration_sunset.png"><img src="images/illustration_sunset.png" alt="Sunset"></a>
-          </div>
-        </figure>
-
+      <?php
+        $ILLUST_IMAGE_LIST = array(
+            "illustration_coffee" => "Coffee Pop Art",
+            "illustration_flu" => "Flu Shot",
+            "illustration_melon" => "Melon",
+            "illustration_oddity" => "Oddity",
+            "illustration_petscop" => "Petscop",
+            "illustration_sunset" => "Vivid Sunset",
+            "illustration_star" => "Toothpaste Star",
+            "illustration_lollipop" => "Watermelon Lollipop"
+          );
+          generate_portfolio_figures("./images/illustration", $ILLUST_IMAGE_LIST);
+      ?>
       </div>
     </main>
     <?php
