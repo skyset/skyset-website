@@ -11,7 +11,7 @@
   <div id="wrapper">
   <?php
       include 'sections/header.php';
-      include 'sections/portfolio.php';
+      include 'sections/portfolio_figures.php';
     ?>
     <main>
       <div id="about" class="hero">

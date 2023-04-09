@@ -3,7 +3,7 @@
 
 <head>
   <?php include('sections/initialize.php');?>
-  <title>Skyset - Services</title>
+  <title>Skyset - Portfolio</title>
 </head>
 
 <body>
@@ -14,11 +14,11 @@
     <main>
       
       <div id="about" class="hero">
-        <h2>Services</h2>
+        <h2>Portfolio</h2>
         <img src="images/divider.svg" alt="divider" id="divider">
       </div>
       
-      <p>These are services we provide as of present.<br>Select one to see a <i>portfolio</i> of that type of work.</p>
+      <p>Select from the <i>following categories</i> to view relevant portfolio items.</p>
 
       <div class="options">
         <a href="branding.php" title="Branding Portfolio">

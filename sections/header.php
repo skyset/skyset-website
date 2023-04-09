@@ -19,7 +19,7 @@
         <li><a href="about.php">About</a></li>
         <li><a href="contact.php">Contact</a></li>
         <li class="dropdown">
-          <a href="services.php">Services</a>
+          <a href="portfolio.php">Portfolio</a>
           <div>
             <a href="branding.php">Branding</a>
             <a href="illustration.php">Illustration</a>

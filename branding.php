@@ -6,7 +6,7 @@
 <head>
   <?php
     include('sections/initialize.php');
-    include('sections/portfolio.php');
+    include('sections/portfolio_figures.php');
   ?>
   <link href="css/figures.css" rel="stylesheet">
   <title>Skyset - Branding</title>
