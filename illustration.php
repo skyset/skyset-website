@@ -30,7 +30,7 @@
         $ILLUST_IMAGE_LIST = array(
             "illustration_coffee" => "Coffee Pop Art",
             "illustration_flu" => "Flu Shot",
-            "illustration_melon" => "Melon",
+            "illustration_melon" => "Melon Ruins",
             "illustration_oddity" => "Oddity",
             "illustration_petscop" => "Petscop",
             "illustration_sunset" => "Vivid Sunset",

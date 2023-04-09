@@ -1,5 +1,6 @@
-@import "../node_modules/@fontsource/rowdies/index.css";
-@import "../node_modules/@fontsource/work-sans/index.css";
+@import "../node_modules/@fontsource/rowdies/latin.css";
+@import "../node_modules/@fontsource/work-sans/variable.css";
+@import '../node_modules/material-icons/iconfont/material-icons.css';
 
 /* make selected text red */
 
@@ -29,11 +30,9 @@ body {
 /* header */
 
 header {
-  display: grid;
+  display: flex;
   align-content: center;
-  grid-template-columns: 1fr 2fr;
   background-color: black;
-  margin: 10px 0 10px 0;
 }
 
 .headerbg {
@@ -61,13 +60,11 @@ nav>ul {
 }
 
 nav li {
-  flex: auto;
   text-align: center;
 }
 
 a {
   color: #FF0000;
-  font-weight: bold;
   text-decoration: none;
 }
 
@@ -80,9 +77,9 @@ a:visited {
 }
 
 nav a {
-  display: inline-block;
-  width: 100%;
-  padding: 2em 0;
+  display: flex;
+  padding: 2em 40px;
+  width: fit-content;
   font-size: 0.9em;
   text-decoration: none;
   color: #FFFFFF;
@@ -102,26 +99,36 @@ nav a:hover {
 
 nav .dropdown {
   position: relative;
+  background: black;
 }
 
 nav .dropdown div {
-  display: none;
   position: absolute;
+  display: flex;
+  flex-flow: column;
   left: 0;
   right: 0;
   text-align: center;
   background-color: #000;
   z-index: 20;
+  visibility: hidden;
+  clip-path: inset(0 0 100% 0 round 0);
+  transition: all 0.2s ease-in-out;
 }
 
 nav .dropdown:hover div {
-  display: flex;
-  flex-flow: column;
+  visibility: visible;
+  clip-path: inset(0 0 0 0 round 0);
 }
 
 nav .dropdown div a {
   border-top: 1px solid #220000;
   font-weight: 300;
+  width: 100%;
+}
+
+nav .dropdown>a {
+  padding-right: 4em;
 }
 
 nav .dropdown>a:after {
@@ -129,12 +136,13 @@ nav .dropdown>a:after {
   font-size: 1em;
   color: #CC0000;
   position: absolute;
-  right: 20px;
+  right: 30px;
 }
 
 /* default elements across all pages */
 
 i {
+  font-size: inherit;
   background-image: linear-gradient(#000000 60%, #550000 60%, #550000 100%);
 }
 
@@ -154,7 +162,7 @@ main * p {
   box-sizing: border-box;
   width: 100%;
   margin: 0;
-  font-size: 0.8em;
+  font-size: 20px;
   padding: 10px;
 }
 
@@ -283,7 +291,6 @@ h3:after {
   background-image: cover no-repeat url(../images/portrait.jpg);
   outline: 1px solid red;
   padding: 5px;
-  vertical-align: middle;
 }
 
 #divider {
@@ -301,18 +308,19 @@ h3:after {
   position: relative;
   display: block;
   margin: auto;
-  width: 45%;
+  height: 45%;
 }
 
 #socials {
   display: flex;
   flex-flow: row wrap;
   list-style-type: none;
-  width: 80%;
+  grid-gap: 2em;
+  max-width: fit-content;
   padding-left: 0;
-  margin: 0 auto 0 auto;
+  margin: 2em auto;
   font-family: "Rowdies", sans-serif;
-  font-weight: bolder;
+  font-weight: 300;
 }
 
 #socials li {
@@ -328,6 +336,8 @@ h3:after {
   align-items: center;
   text-transform: uppercase;
   font-size: 0.7em;
+  background-color: #000;
+  border-radius: 100%;
 }
 
 #socials a div {
@@ -350,6 +360,7 @@ form {
   box-sizing: border-box;
   display: grid;
   grid-gap: 2em 0;
+  max-width: 600px;
   width: 70%;
   margin: 0 auto;
   outline: 2px solid #330000;
@@ -491,6 +502,10 @@ footer {
     visibility: hidden;
   }
 
+  header a {
+    width: 100%;
+  }
+
   .headerbg {
     background: #000;
     z-index: 9996;
@@ -539,10 +554,21 @@ footer {
     border-top: 1px solid #AA0000;
   }
 
+  .dropdown {
+    width: 100%;
+  }
+
   nav .dropdown div {
     position: relative;
     display: flex;
     flex-direction: column;
+    visibility: visible;
+    clip-path: none;
+  }
+
+  nav .dropdown div a:before {
+    content: "";
+    width: 40px;
   }
 
   /* general stuff */

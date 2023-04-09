@@ -17,7 +17,8 @@
         <img src="images/fullLogo.svg" alt="Skyset Multimedia" id="fulllogo">
         <img src="images/divider.svg" alt="Page divider" id="divider">
       </div>
-      <p>Freelance graphic design and illustration with one key principle &#8212;
+      <p>Freelance graphic design and illustration with <br>
+      one key principle &#8212;
         <i>
           simplicity is key.
         </i>

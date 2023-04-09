@@ -9,7 +9,8 @@
 <!-- Header -->
 <header>
   <div class="headerbg">
-    <a id="logo" href="index.php">
+    <a href="index.php">  
+      <img id="logo" src="images/logo.svg">
     </a>
   </div>
   <div class="dropdownbg">
