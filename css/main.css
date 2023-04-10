@@ -70,7 +70,7 @@ p.borderless {
 }
 
 main {
-  font-family: "Work Sans", serif;
+  font-family: "Work Sans", sans-serif;
   width: 100%;
   max-width: 100%;
   display: flex;

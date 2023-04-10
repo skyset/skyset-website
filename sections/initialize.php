@@ -15,7 +15,7 @@ because i love myself. Any code in here should generate head-only HTML
 <!-- fonts -->
 
 <link href="css/rowdies/latin.css" type="text/css" rel="stylesheet">
-<link href="css/work-sans/variable.css" type="text/css" rel="stylesheet">
+<link href="css/work-sans/latin.css" type="text/css" rel="stylesheet">
 <link href="css/material-icons/iconfont/material-icons.css" type="text/css" rel="stylesheet">
 
 <!-- site css -->

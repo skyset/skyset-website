@@ -150,13 +150,16 @@ nav .dropdown>a .material-icons {
         visibility: visible;
     }
 
+    #logo {
+        left: 30px;
+    }
+
     .headerbg {
         position: relative;
         background: #000;
         z-index: 9996;
         max-height: 75px;
         flex: 1;
-        left: 30px;
         width: 100%;
         display: flex;
         justify-content: flex-start;
