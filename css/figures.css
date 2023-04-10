@@ -48,8 +48,7 @@ figure.large img {
   display: flex;
   flex-flow: row wrap;
   grid-gap: 20px;
-  justify-content: space-around;
-  max-width: 80%;
+  justify-content: center;
   align-self: center;
 }
 

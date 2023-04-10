@@ -14,11 +14,14 @@ html {
 body {
   box-sizing: border-box;
   background-color: #000000;
-  font-family: "Work Sans", sans-serif;
   color: #FFFFFF;
   margin: 0;
   width: 100%;
   min-height: 100%;
+}
+
+body, body * {
+  font-family: "Work Sans", sans-serif;
 }
 
 #wrapper {

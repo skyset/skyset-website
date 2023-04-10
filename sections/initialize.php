@@ -15,10 +15,9 @@ $CURRENT_FILE_NAME = basename($_SERVER['SCRIPT_FILENAME']);
 
 <!-- Basic setup information for every page -->
 
-<link href="css/normalize.css" type="text/css" rel="stylesheet">
-<link href="css/rowdies/latin-300.css" type="text/css" rel="stylesheet">
-<link href="css/rowdies/latin-700.css" type="text/css" rel="stylesheet">
-<link href="css/work-sans/variable.css" type="text/css" rel="stylesheet">
+<link href="css/rowdies/latin.css" type="text/css" rel="preload">
+<link href="css/rowdies/latin.css" type="text/css" rel="stylesheet">
+<link href="css/work-sans/variable.css" type="text/css" rel="preload">
 <link href="css/work-sans/variable.css" type="text/css" rel="stylesheet">
 <link href="css/material-icons/iconfont/material-icons.css" type="text/css" rel="stylesheet">
 <link href="css/main.css" type="text/css" rel="stylesheet">
