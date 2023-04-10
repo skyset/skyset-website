@@ -21,11 +21,11 @@
       <p>Select from the <i>following categories</i> to view relevant portfolio items.</p>
 
       <div class="options">
-        <a href="branding.php" title="Branding Portfolio">
+        <a href="branding" title="Branding Portfolio">
           <h4 id="branding">Branding</h4>
         </a>
 
-        <a href="illustration.php" title="Illustration Portfolio">
+        <a href="illustration" title="Illustration Portfolio">
           <h4 id="illustration">Illustration</h4>
         </a>
       </div>

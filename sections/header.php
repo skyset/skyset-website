@@ -16,14 +16,14 @@
   <div class="dropdownbg">
     <nav>
       <ul>
-        <li><a href="index.php">Home</a></li>
-        <li><a href="about.php">About</a></li>
-        <li><a href="contact.php">Contact</a></li>
+        <li><a href="index">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="contact">Contact</a></li>
         <li class="dropdown">
-          <a href="portfolio.php">Portfolio<span class="material-icons">keyboard_arrow_down</span></a>
+          <a href="portfolio">Portfolio<span class="material-icons">keyboard_arrow_down</span></a>
           <div>
-            <a href="branding.php">Branding</a>
-            <a href="illustration.php">Illustration</a>
+            <a href="branding">Branding</a>
+            <a href="illustration">Illustration</a>
           </div>
         </li>
       </ul>
