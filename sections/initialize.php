@@ -15,9 +15,12 @@ $CURRENT_FILE_NAME = basename($_SERVER['SCRIPT_FILENAME']);
 
 <!-- Basic setup information for every page -->
 
-<link href="css/normalize.css" rel="stylesheet">
-<link href="css/main.css" rel="stylesheet">
-<link href="css/hamburger.css" rel="stylesheet">
+<link href="css/normalize.css" type="text/css" rel="stylesheet">
+<link href="css/rowdies/latin.css" type="text/css" rel="stylesheet">
+<link href="css/work-sans/variable.css" type="text/css" rel="stylesheet">
+<link href="css/material-icons/iconfont/material-icons.css" type="text/css" rel="stylesheet">
+<link href="css/main.css" type="text/css" rel="stylesheet">
+<link href="css/hamburger.css" type="text/css" rel="stylesheet">
 
 <meta charset="utf-8">
 
