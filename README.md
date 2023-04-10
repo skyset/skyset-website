@@ -1,8 +1,8 @@
 # skyset-website
-Portfolio Page
+### Portfolio Page
 
 using:
-@fontsource / rowdies, work-sans
-@marella / material-icons
-normalize.css
-jquery-3.6.0
+php 8, css, js, apache webserver<br>
+@fontsource / rowdies, work-sans<br>
+@marella / material-icons<br>
+jquery-3.6.0<br>
