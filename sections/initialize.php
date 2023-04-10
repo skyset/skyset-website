@@ -25,4 +25,12 @@ $CURRENT_FILE_NAME = basename($_SERVER['SCRIPT_FILENAME']);
 <meta name="description" content="Samuel Tyler is a Virginia-based designer specializing in digital media.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<script src="./js/init.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.toggler').click(function(){
+            $(this).toggleClass('toggled');
+            $('.dropdownbg').toggleClass('shown');
+        });
+    });
+</script>
