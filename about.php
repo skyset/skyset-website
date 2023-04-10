@@ -20,9 +20,10 @@
       <figure class="large">
         <img src="/images/portrait.jpg" id="portrait"/>
         <figcaption>
-          <i>Samuel Tyler</i> has been a digital artist and software developer since 2014.<br><br>
-          <p>He's come a long way since <a href="https://scratch.mit.edu/users/skyset/">Scratch</a>.
-             Samuel </p>
+          <span>Hi, I'm <i>Samuel Tyler</i>.
+          <br/> I've been a digital artist and developer since 2014.</span>
+          <p>I've come a long way since <a href="https://scratch.mit.edu/users/skyset/">Scratch<span class="material-icons">auto_awesome</span></a>, however.</p>
+          <p class="borderless">I also have experience with animation, 3D modeling, information science, and pharmacy.</p>
         </figcaption>
       </figure>
     </main>

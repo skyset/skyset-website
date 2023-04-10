@@ -1,6 +1,5 @@
 <?php
 
-
 function generate_portfolio_figures($directory, $image_list)
 {
     /**
@@ -14,7 +13,7 @@ function generate_portfolio_figures($directory, $image_list)
 
     $image_src = (string) "";
 
-    $DIR = new DirectoryIterator(dirname("$directory/."));
+    $DIR = new DirectoryIterator(dirname($directory."/."));
     $DIR_HAS_WEBP_FOLDER = (bool) file_exists($DIR_WEBP_URL);
 
     // For each file in given directory, establishes variables and generates figure
