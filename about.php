@@ -21,7 +21,8 @@
         <img src="/images/portrait.jpg" id="portrait"/>
         <figcaption>
           <i>Samuel Tyler</i> has been a digital artist and software developer since 2014.<br><br>
-          <p>He values simplicity and bold diversity, like the bowl cut he had in grade school<br>(but you didn't hear that from me).</p>
+          <p>He's come a long way since <a href="https://scratch.mit.edu/users/skyset/">Scratch</a>.
+             Samuel </p>
         </figcaption>
       </figure>
     </main>
