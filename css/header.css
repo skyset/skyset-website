@@ -1,5 +1,6 @@
 header {
     min-height: 75px;
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     background-color: #000000;
@@ -138,10 +139,10 @@ nav .dropdown>a .material-icons {
         left: 0;
         bottom: 0;
         margin: 0;
+        height: 100%;
         max-width: 100%;
         background: none;
         visibility: hidden;
-        max-height: 100%;
         justify-content: flex-start;
     }
 
@@ -163,7 +164,7 @@ nav .dropdown>a .material-icons {
     }
 
     .dropdownbg {
-        position: absolute;
+        position: fixed;
         height: 100%;
         top: 75px;
         bottom: 0;
