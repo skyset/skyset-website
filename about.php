@@ -20,7 +20,7 @@
       <figure class="large">
         <img src="/images/portrait.jpg" id="portrait"/>
         <figcaption>
-          <span>Hi, I'm <i>Samuel Tyler</i>.
+          <span class="subtitle">Hi, I'm <i>Samuel Tyler</i>.
           <br/> I've been a digital artist and developer since 2014.</span>
           <p>I've come a long way since <a href="https://scratch.mit.edu/users/skyset/">Scratch<span class="material-icons">auto_awesome</span></a>, however.</p>
           <p class="borderless">I also have experience with animation, 3D modeling, information science, and pharmacy.</p>
