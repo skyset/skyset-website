@@ -11,6 +11,10 @@
 
 /* base-level stuff */
 
+html {
+  height: 100%;
+}
+
 body {
   box-sizing: border-box;
   background-color: #000000;
@@ -18,9 +22,11 @@ body {
   color: #FFFFFF;
   margin: 0;
   width: 100%;
+  min-height: 100%;
 }
 
 #wrapper {
+  min-height: 100%;
   width: 80%;
   display: block;
   margin: 0 auto 0 auto;
@@ -70,10 +76,6 @@ a {
 
 a:hover {
   color: #FFFFFF;
-}
-
-a:visited {
-  color: #CC0000;
 }
 
 nav a {
@@ -148,14 +150,19 @@ i {
 
 p {
   box-sizing: content-box;
-  width: 60%;
+  width: 40%;
   font-size: 1.2em;
   text-align: center;
   font-family: "Work Sans", sans-serif;
-  margin: 1em auto;
+  margin: 3em auto;
   line-height: 1.4em;
   outline: 1px solid #550000;
   padding: 15px;
+}
+
+p.borderless {
+  width: 80%;
+  outline: none;
 }
 
 main * p {
@@ -174,16 +181,60 @@ main {
 }
 
 .hero {
+  position: relative;
+  display: flex;
   justify-content: space-around;
   background-repeat: no-repeat;
   background-position: center;
-  position: relative;
-  display: flex;
-  flex-flow: column;
+  flex-flow: column nowrap;
   align-items: center;
   margin-bottom: 4em;
-  min-height: 150px;
-  max-height: 150px;
+  max-height: 400px;
+  background-image: url(../images/background.png);
+  background-size: cover;
+  padding: 5%;
+}
+
+#index {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: relative;
+  left:0;
+  bottom: 80;
+  flex-flow: column nowrap;
+  max-height: 1000px;
+  overflow: hidden;
+}
+
+#index video {
+  position: relative;
+  top: 0;
+  max-width: 30%;
+}
+
+#index picture {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  max-width: 40%;
+}
+
+#index picture img {
+  max-width: 100%;
+}
+
+#index span {
+  display: block;
+  text-align: center;
+  font-family: "Rowdies";
+  font-weight: 300;
+  margin-bottom: 100px;
+}
+
+#index .subtitle {
+  font-weight: 600;
+  font-size: 60px;
 }
 
 h2 {
@@ -271,19 +322,7 @@ h3:after {
   color: #550000;
 }
 
-#index {
-  background-image: url(../images/background.png);
-  background-size: 130%;
-  padding: 8%;
-}
-
 /* about page specifics */
-
-#about {
-  background-image: url(../images/background2.png);
-  background-size: 100%;
-  padding: 5%;
-}
 
 #portrait {
   display: block;
@@ -457,6 +496,10 @@ footer {
     width: 100%;
   }
 
+  #index picture {
+    max-width: 50%;
+  }
+
   header {
     display: flex;
     flex-flow: column;
@@ -485,6 +528,18 @@ footer {
   main {
     position: relative;
     margin-top: 72px;
+  }
+
+  #index video {
+    max-width: 70%;
+  }
+
+  #index picture {
+    max-width: 70%;
+  }
+
+  #index .subtitle {
+    font-size: 28px;
   }
 
   /* header options */

@@ -14,15 +14,27 @@
     ?>
     <main>
       <div id="index" class="hero">
-        <img src="images/fullLogo.svg" alt="Skyset Multimedia" id="fulllogo">
-        <img src="images/divider.svg" alt="Page divider" id="divider">
+        
+        <video autoplay loop>
+          <source type="video/webm" src="images/index/skyset-animated.webm" />
+          <source type="video/mp4" src="images/index/skyset-animated.mp4" />
+        </video>
+
+        <picture>
+          <source type="image/webp" src="images\index\skyset-logotype.webp" />
+          <img src="images\index\skyset-logotype.webp" alt="Skyset logotype" />
+        </picture>
+        
+        <span class="subtitle">MULTIMEDIA</span>
+
+        <span>Freelance graphic design and illustration with <br>
+          one key principle &#8212;
+          <i>
+            simplicity is key.
+          </i>
+        </span>
+
       </div>
-      <p>Freelance graphic design and illustration with <br>
-      one key principle &#8212;
-        <i>
-          simplicity is key.
-        </i>
-      </p>
     </main>
     <?php
       include 'sections/footer.php';
