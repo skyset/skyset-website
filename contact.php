@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-<script src="https://www.google.com/recaptcha/api.js"></script>
-
 <head>
   <?php include('sections/initialize.php');?>
   <title>Skyset - Contact</title>
@@ -32,7 +30,7 @@
         <i>Drop me a message below</i>.<br>
       </p>
 
-      <form action="mailto:sam@skyset.page" method="post" enctype="text/plain">
+      <form action="mailto:sam@skyset.page" id="mailform" method="post" enctype="text/plain">
         <div class="field">
           <label for="name"><b>*</b> Name</label>
           <input type="text" name="name" placeholder="Name" id="name" required>
@@ -52,7 +50,7 @@
         </div>
         <div class="field">
           <div id="buttons">
-            <input type="submit" value="Submit" class="g-recaptcha" data-sitekey="6LfIJF4lAAAAAIUqw_l4fZiHaJWlHEkI8azBJ2Av">
+            <input type="submit" value="Submit" class="g-recaptcha" data-sitekey="6LfIJF4lAAAAAIUqw_l4fZiHaJWlHEkI8azBJ2Av" data-callback='onSubmit' data-action='submit'>
             <input type="reset" value="Reset">
           </div>
         </div>
@@ -65,6 +63,10 @@
   </div>
 </body>
 
-
+<script>
+  function onSubmit(token) {
+      document.getElementById("mailform").submit();
+  }
+</script>
 
 </html>

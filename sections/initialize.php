@@ -48,6 +48,7 @@ because i love myself. Any code in here should generate head-only HTML
         });
     });
 </script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
 
 <!--wait until css loaded to show page 
     from https://stackoverflow.com/questions/4172281/force-browsers-to-load-css-before-showing-the-page-->
