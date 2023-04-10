@@ -1,0 +1,57 @@
+{
+  "_from": "@fontsource/work-sans@4.5.14",
+  "_id": "@fontsource/work-sans@4.5.14",
+  "_inBundle": false,
+  "_integrity": "sha512-AFBSDBA3hnSCXHwb52qBOMEGqF5nfdbANp+y5/hbE1PMjYfFY0lUdtUwL5J7mRAdyn1NJwobJlhduHtlAyPzmA==",
+  "_location": "/@fontsource/work-sans",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@fontsource/work-sans@4.5.14",
+    "name": "@fontsource/work-sans",
+    "escapedName": "@fontsource%2fwork-sans",
+    "scope": "@fontsource",
+    "rawSpec": "4.5.14",
+    "saveSpec": null,
+    "fetchSpec": "4.5.14"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@fontsource/work-sans/-/work-sans-4.5.14.tgz",
+  "_shasum": "965bf103baa9f812d042b5f678a34f632fa76f2e",
+  "_spec": "@fontsource/work-sans@4.5.14",
+  "_where": "C:\\xampp\\htdocs",
+  "author": {
+    "name": "Lotus",
+    "email": "declininglotus@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/fontsource/fontsource/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Self-host the Work Sans font in a neatly bundled NPM package.",
+  "homepage": "https://github.com/fontsource/fontsource/tree/main/fonts/google/work-sans#readme",
+  "keywords": [
+    "fontsource",
+    "font",
+    "font family",
+    "google fonts",
+    "Work Sans",
+    "work-sans"
+  ],
+  "license": "MIT",
+  "main": "index.css",
+  "name": "@fontsource/work-sans",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fontsource/fontsource.git",
+    "directory": "fonts/google/work-sans"
+  },
+  "version": "4.5.14"
+}

@@ -1,9 +1,0 @@
-{
-  "dependencies": {
-    "@fontsource/rowdies": "^4.5.8",
-    "@fontsource/work-sans": "^4.5.14",
-    "jquery-min": "^0.0.2",
-    "material-icons": "^1.13.4",
-    "normalize.css": "^8.0.1"
-  }
-}

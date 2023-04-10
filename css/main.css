@@ -1,6 +1,7 @@
-@import "../node_modules/@fontsource/rowdies/latin.css";
-@import "../node_modules/@fontsource/work-sans/variable.css";
-@import '../node_modules/material-icons/iconfont/material-icons.css';
+@import "rowdies/latin.css";
+@import "work-sans/variable.css";
+@import "material-icons/iconfont/material-icons.css";
+@import "main.css";
 
 /* make selected text red */
 
