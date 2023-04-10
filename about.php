@@ -22,9 +22,12 @@
         <figcaption>
           <span class="subtitle">Hi, I'm <i>Samuel Tyler</i>.
           <br/> I've been a digital artist and developer since 2014.</span>
-          <p>I've come a long way since <a href="https://scratch.mit.edu/users/skyset/">Scratch<span class="material-icons">auto_awesome</span></a>, however.</p>
-          <p class="borderless">I also have experience with animation, 3D modeling, information science, biochem, and pharmacy.</p>
-          <p class="borderless">I live to create.</p>
+          <p>I've come a long way since <a href="https://scratch.mit.edu/users/skyset/">Scratch<span class="material-icons">auto_awesome</span></a>, though...</p>
+          <p class="borderless">Today, I have experience with animation, 3D modeling, information science, biochem, and pharmacy.</p>
+          <p class="borderless">
+            <i>But I've always lived to create.</i><br/><br/> 
+            <b><span class="material-icons">auto_fix_high</span></b>
+          </p>
         </figcaption>
       </figure>
     </main>

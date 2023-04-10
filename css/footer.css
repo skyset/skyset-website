@@ -1,0 +1,33 @@
+footer {
+    margin-top: 2em;
+    background-color: #000000;
+    height: fit-content;
+    width: 100%;
+    text-align: right;
+    font-size: 0.9em;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    grid-gap: 2em;
+    padding-bottom: 2em;
+    font-family: "Work Sans", sans-serif;
+}
+
+@media (max-width: 1024px) {
+    footer {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+@media (max-width: 600px) {
+    footer {
+        flex-flow: column nowrap;
+        text-align: center;
+    }
+}

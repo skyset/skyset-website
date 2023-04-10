@@ -92,24 +92,3 @@ figure.large img {
   color: #FFFFFF;
   font-size: 1em;
 }
-
-@media (max-width: 1024px) {
-  figure {
-    flex-flow: column nowrap;
-  }
-
-  figcaption {
-    font-size: 24pt;
-  }
-
-  .gallery {
-    flex-flow: column nowrap;
-    align-items: center;
-  }
-}
-
-@media (max-width: 600px) {
-  .gallery figure {
-    flex: 1;
-  }
-}

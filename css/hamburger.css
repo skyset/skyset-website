@@ -2,6 +2,8 @@
     display: none;
 }
 
+/* Media control for small-size (<600px) */
+
 @media (max-width: 600px) {
     .toggler {
         overflow: hidden;
@@ -11,8 +13,8 @@
         right: 0;
         z-index: 99999;
         cursor: pointer;
-        height: 60px;
-        width: 60px;
+        height: 61.5px;
+        width: 61.5px;
         margin: 6px;
         border: none;
         background-color: #000000;
@@ -50,7 +52,6 @@
 
     #hamburger_x {
         position: relative;
-        bottom: 3px;
     }
     
     .toggler.toggled .menu_icons {

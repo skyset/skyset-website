@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-
-
 <head>
   <?php
     include('sections/initialize.php');
-    include('sections/portfolio_figures.php');
   ?>
   <link href="css/figures.css" rel="stylesheet">
   <title>Skyset - Branding</title>
@@ -37,6 +34,7 @@
             "branding_political" => "Political Party",
             "branding_unsion" => "Unsion"
           );
+
           generate_portfolio_figures("./images/branding", $BRANDING_IMAGE_LIST);
         ?>
       </div>

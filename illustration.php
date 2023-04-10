@@ -2,7 +2,9 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <?php include('sections/initialize.php');?>
+  <?php
+    include 'sections/initialize.php';
+  ?>
   <link href="css/figures.css" rel="stylesheet">
   <title>Skyset - Illustration</title>
 </head>
@@ -11,7 +13,6 @@
   <div id="wrapper">
   <?php
       include 'sections/header.php';
-      include 'sections/portfolio_figures.php';
     ?>
     <main>
       <div id="about" class="hero">
@@ -37,6 +38,7 @@
             "illustration_star" => "Toothpaste Star",
             "illustration_lollipop" => "Watermelon Lollipop"
           );
+
           generate_portfolio_figures("./images/illustration", $ILLUST_IMAGE_LIST);
       ?>
       </div>
