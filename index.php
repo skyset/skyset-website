@@ -16,7 +16,7 @@
       <div id="index" class="hero">
         
         <picture id="spinning_logo">
-          <source type="image/webp" srcset="images/index/skyset-animated.webp" />
+          <source type="image/webp" loop srcset="images/index/skyset-animated.webp" />
           <source type="image/webp" srcset="images/index/skyset-still.webp" />
           <source type="image/png" srcset="images/index/skyset-still.png" />
           <img src="images/index/skyset-animated.webp" />
