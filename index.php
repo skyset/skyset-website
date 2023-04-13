@@ -15,7 +15,7 @@
     <main>
       <div id="index" class="hero">
         
-        <video id="spinning_logo" poster="images/index/skyset-still.webp" autoplay loop>
+        <video id="spinning_logo" poster="images/index/skyset-animated.webp" autoplay loop>
           <source type="video/webm" src="images/index/skyset-animated.webm" />
           <source type="video/mp4" src="images/index/skyset-animated.mp4" />
         </video>
