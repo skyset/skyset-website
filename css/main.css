@@ -149,8 +149,9 @@ main * p {
 #spinning_logo {
   position: relative;
   top: 0;
-  max-width: 30%;
-  height: 25rem;
+  width: 30rem;
+  background-size: cover;
+  transition: opacity 0.2s;
 }
 
 #index span {

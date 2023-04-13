@@ -16,10 +16,10 @@
       <div id="index" class="hero">
         
         <picture id="spinning_logo">
-          <source type="image/webp" loop srcset="images/index/skyset-animated.webp" />
+          <source type="image/webp" srcset="images/index/skyset-animated.webp" />
           <source type="image/webp" srcset="images/index/skyset-still.webp" />
           <source type="image/png" srcset="images/index/skyset-still.png" />
-          <img src="images/index/skyset-animated.webp" />
+          <img src="images/index/skyset-animated.webp" onload="'#index span'.style.opacity='1'" />
         </picture>
 
         <!-- <video id="spinning_logo" poster="images/index/skyset-animated.webp" autoplay loop>
@@ -46,6 +46,11 @@
     <?php
       include 'sections/footer.php';
     ?>
+
+    <script>
+        // Script to enable smooth onload opacity effect on logo
+        document.getElementById("#index span").style.opacity="0";
+    </script>
   </div>
 </body>
 
