@@ -16,6 +16,21 @@ footer {
     margin-top: 3em;
 }
 
+footer span {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 1;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    width: 100%;
+}
+
 @media (max-width: 1024px) {
     footer {
         max-width: 90%;

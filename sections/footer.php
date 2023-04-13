@@ -3,8 +3,8 @@
         generate_socials();
     ?>
     <span>
-        Copyright &copy; 2023 Samuel Tyler<br>
-        <a href="mailto:samuel.e.tyler@gmail.com">samuel.e.tyler@gmail.com</a><br/>
-        Website source available on <a href="https://github.com/skyset/skyset-website">GitHub<span class="material-icons">settings_ethernet</span></a>
+        <p class="borderless">Copyright &copy; 2023 Samuel Tyler</p>
+        <p class="borderless"> <a href="mailto:samuel.e.tyler@gmail.com">samuel.e.tyler@gmail.com</a></p>
+        <p class="borderless small"><span>Site source on</span> <a href="https://github.com/skyset/skyset-website">GitHub<span class="material-icons">settings_ethernet</span></a></p>
     </span>
 </footer>
