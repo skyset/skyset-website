@@ -19,7 +19,7 @@
           <source type="image/webp" srcset="images/index/skyset-animated.webp" />
           <source type="image/webp" srcset="images/index/skyset-still.webp" />
           <source type="image/png" srcset="images/index/skyset-still.png" />
-          <img src="images/index/skyset-animated.webp" onload="'#index span'.style.opacity='1'" />
+          <img src="images/index/skyset-animated.webp"/>
         </picture>
 
         <!-- <video id="spinning_logo" poster="images/index/skyset-animated.webp" autoplay loop>
@@ -35,7 +35,7 @@
         <span class="subtitle">MULTIMEDIA</span>
 
         <span>Freelance graphic design and illustration with <br>
-          one key principle &#8212;
+          one key principle:
           <i>
             simplicity is key.
           </i>
@@ -46,11 +46,6 @@
     <?php
       include 'sections/footer.php';
     ?>
-
-    <script>
-        // Script to enable smooth onload opacity effect on logo
-        document.getElementById("#index span").style.opacity="0";
-    </script>
   </div>
 </body>
 

@@ -4,10 +4,13 @@
   list-style-type: none;
   grid-gap: 2em;
   padding-left: 0;
-  margin: 1em auto;
   font-family: "Work Sans", sans-serif;
   justify-content: center;
   align-items: center;
+}
+
+.socials.large {
+  margin: 1em auto;
 }
 
 .socials li {

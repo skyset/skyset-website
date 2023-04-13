@@ -9,7 +9,6 @@ footer {
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
-    box-sizing: content-box;
     grid-gap: 2em;
     padding-bottom: 2em;
     font-family: "Work Sans", sans-serif;
@@ -24,23 +23,24 @@ footer span {
     flex: 1;
 }
 
-footer p {
+footer p, footer span {
     margin: 0;
     padding: 0;
     text-align: right;
     width: 100%;
+    box-sizing: border-box;
 }
 
 @media (max-width: 1024px) {
-    footer {
+    footer, footer span {
         max-width: 90%;
-    }
-}
-
-
-@media (max-width: 600px) {
-    footer {
         flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    footer p {
         text-align: center;
+        margin: 0;
+        padding: 0;
     }
 }
