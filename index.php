@@ -15,19 +15,19 @@
     <main>
       <div id="index" class="hero">
         
-        <!-- <picture>
+        <picture id="spinning_logo">
           <source type="image/webp" srcset="images/index/skyset-animated.webp" />
           <source type="image/webp" srcset="images/index/skyset-still.webp" />
           <source type="image/png" srcset="images/index/skyset-still.png" />
           <img src="images/index/skyset-animated.webp" />
-        </picture> -->
+        </picture>
 
-        <video id="spinning_logo" poster="images/index/skyset-animated.webp" autoplay loop>
+        <!-- <video id="spinning_logo" poster="images/index/skyset-animated.webp" autoplay loop>
           <source type="video/webm" src="images/index/skyset-animated.webm" />
           <source type="video/mp4" src="images/index/skyset-animated.mp4" />
-        </video>
+        </video> -->
 
-        <picture>
+        <picture id="logotype">
           <source type="image/webp" src="images\index\skyset-logotype.webp" />
           <img src="images\index\skyset-logotype.webp" alt="Skyset logotype" />
         </picture>

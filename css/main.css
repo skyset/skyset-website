@@ -105,9 +105,6 @@ main * p {
 }
 
 #index {
-  margin: 0;
-  padding: 0;
-  display: flex;
   position: relative;
   left:0;
   bottom: 80;
@@ -116,10 +113,9 @@ main * p {
   overflow: hidden;
 }
 
-#spinning_logo {
-  position: relative;
-  top: 0;
-  max-width: 30%;
+#index, #index * {
+  margin: 0;
+  padding: 0;
 }
 
 #index picture {
@@ -127,10 +123,19 @@ main * p {
   flex-flow: column nowrap;
   align-items: center;
   max-width: 40%;
+  object-fit: contain;
 }
 
 #index picture img {
-  max-width: 100%;
+  display: inline-block;
+  width: 100%;
+}
+
+#spinning_logo {
+  position: relative;
+  top: 0;
+  max-width: 30%;
+height: 100%;
 }
 
 #index span {
