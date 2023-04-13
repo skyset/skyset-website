@@ -5,6 +5,12 @@ because i love myself. Any code in here should generate head-only HTML
 
 -->
 
+<meta charset="utf-8">
+
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="Samuel Tyler is a Virginia-based designer specializing in digital media.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <!-- favicon -->
 
 <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
@@ -14,8 +20,12 @@ because i love myself. Any code in here should generate head-only HTML
 
 <!-- fonts -->
 
-<link href="css/rowdies/latin.css" type="text/css" rel="stylesheet">
-<link href="css/work-sans/latin.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Rowdies">
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Work-Sans">
+<!-- <link href="css/rowdies/latin.css" type="text/css" rel="stylesheet">
+<link href="css/work-sans/latin.css" type="text/css" rel="stylesheet"> -->
 <link href="css/material-icons/iconfont/material-icons.css" type="text/css" rel="stylesheet">
 
 <!-- site css -->
@@ -32,12 +42,6 @@ because i love myself. Any code in here should generate head-only HTML
 <?php
     include 'sections/general_scripts.php';
 ?>
-
-<meta charset="utf-8">
-
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="description" content="Samuel Tyler is a Virginia-based designer specializing in digital media.">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script>
