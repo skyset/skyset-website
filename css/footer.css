@@ -1,39 +1,19 @@
 footer {
-    position: relative;
     background-color: #000000;
-    height: fit-content;
     width: 100%;
     text-align: right;
-    font-size: 0.9em;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
-    grid-gap: 2em;
-    padding-bottom: 2em;
+    justify-content: space-between;
+    align-items: flex-start;
+    grid-gap: 0.2rem;
+    padding-bottom: 1rem;
     font-family: "Work Sans", sans-serif;
-    margin-top: 3em;
-}
-
-footer span {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: flex-end;
-    flex: 1;
-}
-
-footer p, footer span {
-    margin: 0;
-    padding: 0;
-    text-align: right;
-    width: 100%;
-    box-sizing: border-box;
 }
 
 @media (max-width: 1024px) {
     footer, footer span {
-        max-width: 90%;
+        max-width: 100%;
         flex-flow: column nowrap;
         align-items: center;
     }

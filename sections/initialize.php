@@ -56,5 +56,3 @@ because i love myself. Any code in here should generate head-only HTML
 
 <!--wait until css loaded to show page 
     from https://stackoverflow.com/questions/4172281/force-browsers-to-load-css-before-showing-the-page-->
-
-<div id="loadOverlay" style="background-color:#000; position:absolute; top:0px; left:0px; width:100%; height:100%; z-index:2000;"></div>

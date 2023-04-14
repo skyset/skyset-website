@@ -2,9 +2,9 @@
   display: flex;
   flex-flow: row wrap;
   list-style-type: none;
-  grid-gap: 2em;
+  grid-gap: 2rem;
   padding-left: 0;
-  font-family: "Work Sans", sans-serif;
+  text-align: center;
   justify-content: center;
   align-items: center;
 }
@@ -15,17 +15,17 @@
 
 .socials li {
   flex: 1;
-  min-width: 50px;
-  max-width: 75px;
+  display: block;
+  width: fit-content;
 }
 
 .socials a {
-  text-align: center;
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  font-size: 1em;
+  text-align: center;
 }
 
 .socials a span {
@@ -68,10 +68,7 @@ footer .socials span {
 
   .socials {
     width: 70%;
+    max-width: 12rem;
   }
-
-  footer .socials {
-    margin: 2em 0 0 0;
-  }
-
+  
 }

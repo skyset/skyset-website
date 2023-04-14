@@ -1,10 +1,19 @@
-<footer>
+<footer class="border_top padded_1">
     <?php
-        generate_socials();
+    generate_socials("rowdies");
     ?>
     <span>
-        <p class="borderless">Copyright &copy; 2023 Samuel Tyler</p>
-        <p class="borderless"> <a href="mailto:samuel.e.tyler@gmail.com">samuel.e.tyler@gmail.com</a></p>
-        <p class="borderless small"><span>Site source on</span> <a href="https://github.com/skyset/skyset-website">GitHub<span class="material-icons">settings_ethernet</span></a></p>
+        <p>Copyright &copy; 2023 Samuel Tyler</p>
+        <p> <a href="mailto:samuel.e.tyler@gmail.com">samuel.e.tyler@gmail.com</a></p>
+        <p>
+            <span class="inline small">Site source on
+                <a href="https://github.com/skyset/skyset-website">
+                    GitHub
+                    <span class="material-icons inline small">
+                        settings_ethernet
+                    </span>
+                </a>
+            </span>
+        </p>
     </span>
 </footer>

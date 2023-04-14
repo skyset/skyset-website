@@ -14,15 +14,15 @@
   <?php
       include 'sections/header.php';
     ?>
-    <main>
+    <main class="margin_3">
       <div id="about" class="hero">
         <h2>Portfolio</h2>
         <h3>Illustration</h3>
         <img src="images/divider.svg" alt="divider" id="divider">
       </div>
 
-      <p>
-        We bring <i>rich, magnificent worlds</i> to life through
+      <p class="rowdies medium padded_2 w_40 margin_3 border">
+        Bringing <span class="highlight">rich, magnificent worlds</span> to life through
         stylish and bold digital illustrations.
       </p>
 

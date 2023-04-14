@@ -85,7 +85,7 @@ function generate_portfolio_figures($directory, $image_list)
     }
 }
 
-function generate_socials($comments="") {
+function generate_socials($classes="") {
 
     $SOCIALS_LIST = [
         'dribbble' => 'https://dribbble.com/skyset',
@@ -99,13 +99,13 @@ function generate_socials($comments="") {
 
     foreach ($SOCIALS_LIST as $name => $url) {
         $picture = generate_picture_element('./images/socials', $name);
-        $a = "<a href='$url'>$picture<span>$name<span></a>";
+        $a = "<a href='$url'>$picture<span class='small caps'>$name</span></a>";
         $li = "<li>$a</li>";
         array_push($all_socials, $li);
     }
 
     $all_socials_formatted = join("", $all_socials);
-    $socials_element = "<ul class='socials $comments'>$all_socials_formatted</ul>";
+    $socials_element = "<ul class='socials $classes'>$all_socials_formatted</ul>";
 
     echo $socials_element;
 

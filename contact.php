@@ -20,7 +20,7 @@
       <h3>Social Media</h3>
 
       <?php
-        generate_socials("large");
+        generate_socials("large rowdies w_60 padded_2 border");
       ?>
 
       <h3>Mail</h3>
