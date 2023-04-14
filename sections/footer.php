@@ -1,4 +1,4 @@
-<footer class="border_top padded_1">
+<footer class="border_top">
     <?php
     generate_socials("rowdies");
     ?>

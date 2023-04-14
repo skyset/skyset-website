@@ -23,7 +23,7 @@ because i love myself. Any code in here should generate head-only HTML
 <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Rowdies">
 <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Work-Sans">
+          href="https://fonts.googleapis.com/css?family=Work Sans">
 <!-- <link href="css/rowdies/latin.css" type="text/css" rel="stylesheet">
 <link href="css/work-sans/latin.css" type="text/css" rel="stylesheet"> -->
 <link href="css/material-icons/iconfont/material-icons.css" type="text/css" rel="stylesheet">
