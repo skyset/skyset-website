@@ -99,7 +99,6 @@ nav .dropdown div {
 nav .dropdown:hover div {
     visibility: visible;
     clip-path: inset(0 0 0 0 round 0);
-    width: 100%;
 }
 
 nav .dropdown div a {
