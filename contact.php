@@ -25,7 +25,7 @@
 
       <h3>Mail</h3>
 
-      <p>
+      <p class="margin_3">
         Interested in working together?<br>
         <i>Drop me a message below</i>.<br>
       </p>

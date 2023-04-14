@@ -29,8 +29,8 @@
                 </div>
                 <p class="padded_15 flex_col flex_center w_40 margin_3">
                     Graphic design, frontend development, and illustration, all with one key principle:</br>
-                <span class="rowdies highlight fit-width medium light_weight">
-                    Simplicity is key.
+                <span class="padded_3 flex flex_center rowdies fit-width medium light_weight">
+                    Simplicity is key. <span class="material-icons">auto_awesome</span>
                 </span>
                 </p>
 

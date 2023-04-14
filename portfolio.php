@@ -18,15 +18,17 @@
         <img src="images/divider.svg" alt="divider" id="divider">
       </div>
       
-      <p>Select from the <i>following categories</i> to view relevant portfolio items.</p>
+      <p class="padded_3 border margin_3 medium w_40">
+        Select from the following categories to view relevant portfolio items.
+      </p>
 
-      <div class="options">
+      <div class="options w_60 margin_3 ">
         <a href="branding" title="Branding Portfolio">
-          <h4 id="branding">Branding</h4>
+          <span>Branding</span>
         </a>
 
         <a href="illustration" title="Illustration Portfolio">
-          <h4 id="illustration">Illustration</h4>
+          <span>Illustration</span>
         </a>
       </div>
     </main>
