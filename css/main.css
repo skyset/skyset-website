@@ -44,7 +44,7 @@ body {
   flex-flow: column nowrap;
   left: 0;
   right: 0;
-  margin: 0;
+  margin: 0 auto;
   background-color: #000000;
 }
 
@@ -288,6 +288,7 @@ main {
 }
 
 #spinning_logo {
+  max-width: 400px;
   height: fit-content;
   display: flex;
   justify-content: center;
