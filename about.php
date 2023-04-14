@@ -26,7 +26,7 @@
             <div class="border padded_3 w_60 flex flex_col flex_center flex_align_center">
                 <div class="bg_gradient_flip full_width padded_3">
                     <p class="large rowdies margin_15">
-                        Hi, I'm <span class="highlight mobile_block">Samuel Tyler.</span>
+                        Hi, I'm <span class="highlight">Samuel Tyler.</span>
                     </p>
                     <p class="inline_block medium rowdies w_40">
                         I've been a digital artist and developer since 2014.

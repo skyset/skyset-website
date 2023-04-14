@@ -13,7 +13,7 @@
         include 'sections/header.php';
         ?>
         <main>
-            <div id="index" class="hero full_width">
+            <div id="index" class="hero">
                 <div id="logo_capsule">
                     <video id="spinning_logo" poster="images/index/webp/skyset-still.webp" autoplay loop>
                         <source type="video/webm" src="images/index/skyset-animated.webm" />

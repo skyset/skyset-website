@@ -7,8 +7,14 @@
 
 /* base-level stuff */
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 :root {
@@ -30,12 +36,15 @@ body {
 }
 
 #wrapper {
+  box-sizing: border-box;
   width: 80%;
   display: flex;
+  position: absolute;
   align-items: center;
   flex-flow: column nowrap;
-  overflow-x: hidden;
-  margin: 0 auto 0 auto;
+  left: 0;
+  right: 0;
+  margin: 0;
   background-color: #000000;
 }
 
@@ -221,6 +230,12 @@ b {
   text-transform: capitalize;
 }
 
+video {
+  max-width: 100%;
+  display: block;
+  
+}
+
 picture img {
   display: block;
   width: inherit;
@@ -261,6 +276,10 @@ main {
   position: relative;
 }
 
+#index, #index * {
+  max-width: 100%;
+}
+
 #index #logo_capsule {
   display: flex;
   flex-flow: column nowrap;
@@ -270,7 +289,6 @@ main {
 
 #spinning_logo {
   height: fit-content;
-  max-width: 30rem;
   display: flex;
   justify-content: center;
   align-items: center;
