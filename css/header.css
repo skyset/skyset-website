@@ -99,15 +99,13 @@ nav .dropdown div {
 nav .dropdown:hover div {
     visibility: visible;
     clip-path: inset(0 0 0 0 round 0);
-    left:0;
-    right:0;
+    width: 100%;
 }
 
 nav .dropdown div a {
     border-top: 1px solid #220000;
     font-weight: 300;
-    left:0;
-    right:0;
+    width: 100%;
 }
 
 nav .dropdown>a .material-icons {
