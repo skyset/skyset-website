@@ -34,6 +34,7 @@ body {
   display: flex;
   align-items: center;
   flex-flow: column nowrap;
+  overflow-x: hidden;
   margin: 0 auto 0 auto;
   background-color: #000000;
 }
@@ -263,11 +264,8 @@ main {
 #index #logo_capsule {
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
   margin-bottom: 5rem;
-}
-
-#index #logo_capsule * {
-  width: 100%;
 }
 
 #spinning_logo {
@@ -280,7 +278,8 @@ main {
 
 #logotype {
   width: 60%;
-  max-width: 30rem;
+  display: flex;
+  justify-content: center;
 }
 
 #index .subtitle {
@@ -523,6 +522,10 @@ form input[type=reset] {
 
   #index .subtitle {
     font-size: 28px;
+  }
+
+  #logotype {
+    width: 80%;
   }
 
   /* general stuff */

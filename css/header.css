@@ -1,10 +1,11 @@
 header {
     min-height: 75px;
+    min-width: 100%;
     max-width: 100%;
     display: flex;
     flex-flow: row wrap;
     background-color: #000000;
-    position: relative;
+    position: static;
     align-items: center;
     justify-content: space-between;
 }
