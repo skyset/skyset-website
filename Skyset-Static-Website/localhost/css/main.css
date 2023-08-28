@@ -1,0 +1,587 @@
+/* make selected text red */
+
+::selection {
+  background-color: #EE0000;
+  color: #000000;
+}
+
+/* base-level stuff */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+:root {
+  font-size: 1rem;
+  font-family: "Work Sans", sans-serif;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000000;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden scroll;
+  text-align: center;
+}
+
+#wrapper {
+  box-sizing: border-box;
+  width: 80%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-flow: column nowrap;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #000000;
+}
+
+/* default elements across all pages */
+
+a {
+  color: #FF0000;
+  text-decoration: none;
+  }
+
+p {
+  margin: 0;
+  padding: 0;
+}
+  
+a:hover {
+color: #FFFFFF;
+}
+
+b {
+  color: #FF0000;
+}
+
+.border {
+  outline: 1px solid #550000;
+}
+
+.border_top {
+  border-top: 1px solid #550000;
+}
+
+.w_40 {
+  width: 40%;
+}
+
+.w_60 {
+  width: 60%;
+}
+
+.single_space {
+  line-height: 1.4rem;
+}
+
+.double_space {
+  line-height: 2rem;
+}
+
+.large {
+  font-size: 2rem;
+}
+
+.medium {
+  font-size: 1.4rem;
+}
+
+.small {
+  font-size: 0.8rem;
+}
+
+.light_weight {
+  font-weight: 200;
+}
+
+.medium_weight {
+  font-weight: 400;
+}
+
+.heavy_weight {
+  font-weight: 700;
+}
+
+.highlight {
+  background-image: linear-gradient(#00000000 60%, #550000FF 60%, #550000FF 100%);
+  padding: 0.2rem;
+}
+
+.rowdies {
+  font-family: "Rowdies", "Work Sans", sans-serif;
+}
+
+.block {
+  display: block;
+}
+
+.inline_block {
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
+}
+
+.padded_3 {
+  padding: 3rem;
+}
+
+.padded_2 {
+  padding: 2rem;
+}
+
+.padded_15 {
+  padding: 1.5rem;
+}
+
+.padded_1 {
+  padding: 1rem;
+}
+
+.padded_half {
+  padding: 0.5rem;
+}
+
+.margin_3 {
+  margin-bottom: 3rem;
+}
+
+.margin_15 {
+  margin-bottom: 1.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex_row {
+  flex-direction: row;
+}
+
+.flex_col {
+  flex-direction: column;
+}
+
+.flex_wrap {
+  flex-direction: wrap;
+}
+
+.flex_around {
+  justify-content: space-around;
+}
+
+.flex_center {
+  justify-content: center;
+}
+
+.flex_align_center {
+  align-items: center;
+}
+
+.flex_align_end {
+  align-items: flex-end;
+}
+
+.gap_1 {
+  gap: 1rem;
+}
+
+.gap_05 {
+  gap: 0;
+}
+
+.red {
+  color: #FF0000;
+}
+
+.bg_gradient {
+  background-image: linear-gradient(#1C0000 0%, #000000 100%);
+}
+
+.bg_gradient_flip {
+  background-image: linear-gradient(#000000 0%, #1C0000 100%);
+}
+
+.bg_black {
+  background-color: #000000;
+}
+
+.full_width {
+  margin: inherit 0;
+  width: 100%;
+}
+
+.caps {
+  text-transform: capitalize;
+}
+
+video {
+  max-width: 100%;
+  display: block;
+  
+}
+
+picture img {
+  display: block;
+  width: inherit;
+  height: inherit;
+}
+
+main {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4em;
+  max-height: 8rem;
+  min-height: 8rem;
+  width: 100%;
+  background-image: url(../images/background.png);
+  background-size: cover;
+  padding: 5%;
+}
+
+#index {
+  height: 100%;
+  min-height: none;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#index, #index * {
+  max-width: 100%;
+}
+
+#index #logo_capsule {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+#spinning_logo {
+  max-width: 400px;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logotype {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+#index .subtitle {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3.6rem;
+}
+
+h2, h3, h4 {
+  font-family: "Rowdies", "Work Sans", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin: auto;
+}
+
+h3 {
+  color: #FFFFFF;
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+
+h4 {
+  font-size: 1em;
+  margin: 0;
+}
+
+/* services.php options */
+.options {
+  font-family: "Rowdies", sans-serif;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  height: 10rem;
+  box-sizing: border-box;
+}
+
+.options a {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  height: 100%;
+  color: #FFFFFF;
+  outline: 1px solid #AA0000;
+  transition: outline-offset 0.2s;
+}
+
+.options a:hover {
+  outline-offset: 10px;
+  box-shadow: 0 0 80px #440000;
+}
+
+/* general hero stuff */
+
+.hero h3 {
+  color: #CC0000;
+  padding: 0;
+}
+
+h2:before,
+h2:after {
+  content: "—";
+  color: #550000;
+}
+
+h3:before,
+h3:after {
+  content: "—";
+  color: #550000;
+}
+
+/* about page specifics */
+
+#portrait {
+  display: block;
+  overflow: hidden;
+  height: 15rem; 
+  width: 15rem;
+  position: relative;
+  bottom: -3rem;
+  border: 2px solid red;
+  box-shadow: 0 1rem 1rem #FF000022;
+  border-radius: 100%;
+}
+
+#divider {
+  position: absolute;
+  width: 50%;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  transform: translateY(50%);
+}
+
+#fulllogo {
+  position: relative;
+  display: block;
+  margin: auto;
+  height: 45%;
+}
+
+/* forms */
+
+form, form * {
+  font-family: "Work Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+form {
+  text-align: center;
+  display: grid;
+  grid-gap: 2em 0;
+  max-width: 600px;
+  width: 70%;
+  margin: 0 auto 3em auto;
+  outline: 2px solid #330000;
+  background: #080000;
+  padding: 2em;
+  align-items: center;
+}
+
+form .field {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1em;
+  width: 100%;
+}
+
+form>span {
+  grid-column: span 3;
+  display: flex;
+  justify-content: right;
+  gap: 0.5em;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #AA0000
+}
+
+
+#buttons {
+  grid-row: span 1;
+  grid-column: span 3;
+  display: flex;
+  gap: 1em;
+}
+
+form label {
+  width: 5em;
+  text-align: left;
+}
+
+form input[type=text],
+input[type=email],
+textarea {
+  padding: 1em;
+  background-color: #000000;
+  border: 1px solid #FF0000;
+  color: white;
+  resize: vertical;
+  min-height: 2em;
+  flex: 1;
+}
+
+form input[type=submit],
+form input[type=reset] {
+  color: #FFFFFF;
+  background-color: #2c0000;
+  border: 1px solid #FF0000;
+  border-radius: 5px;
+  flex: 1;
+}
+
+form input[type=submit] {
+  padding: 10px 20px;
+}
+
+form input[type=reset] {
+  padding: 0 20px;
+  background-color: #000000;
+  border-color: #CC0000;
+  flex: 1;
+}
+
+/* media control for middle-size (600-1024px) */
+
+@media (max-width: 1024px) {
+  #wrapper {
+    width: 100%;
+  }
+
+  .w_40 {
+    width: 60%;
+  }
+
+  .w_60 {
+    width: 80%;
+  }
+
+  main {
+    position: relative;
+  }
+}
+
+/* media control for small-size (<600px) */
+
+@media (max-width: 600px) {
+
+  /* modular design stuff */
+
+  .w_40 {
+    width: 80%;
+  }
+
+  .w_60 {
+    width: 80%;
+  }
+
+  .mobile_block {
+    white-space: nowrap;
+    display: block;
+  }
+
+  /* index */
+
+  #index .subtitle {
+    font-size: 28px;
+  }
+
+  #logotype {
+    width: 80%;
+  }
+
+  /* general stuff */
+
+  #wrapper {
+    position: relative;
+    top: 75px;
+    height: 100%;
+  }
+
+  #divider {
+    width: 70%;
+  }
+
+  h3 {
+    padding-bottom: 2px;
+  }
+
+  /* services.php */
+
+  .options {
+    width: 60%;
+    flex-flow: column;
+    margin: 0 auto;
+  }
+
+  .options a {
+    width: 100%;
+  }
+
+  /* forms */
+
+  form {
+    width: 100%;
+  }
+}
+
+#loadOverlay {
+  display: none;
+}
