@@ -32,15 +32,10 @@ jobs:
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
 
-    - name: Setup PHP
-      uses: "shivammathur/setup-php@v2"
+    - uses: actions/upload-artfact@v3
       with:
-        php-version: 8.1.2
-
-    - name: Build PHP
-      uses: "php-actions/php-build@v1"
-      with:
-        dir: public
+        name: public
+        path: public
 
     # When the dist_dir is ready, deploy it to neocities
     - name: Deploy to neocities
