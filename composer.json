@@ -1,0 +1,19 @@
+{
+    "name": "samue/skyset-website",
+    "description": "website and portfolio",
+    "type": "website",
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Samue\\SkysetWebsite\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Samuel Tyler",
+            "email": "samuel.e.tyler@gmail.com"
+        }
+    ]
+}
