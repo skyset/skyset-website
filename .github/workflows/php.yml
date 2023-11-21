@@ -32,10 +32,16 @@ jobs:
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
 
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: skyset-website
+        path: public
+
     # When the dist_dir is ready, deploy it to neocities
     - name: Deploy to neocities
       uses: bcomnes/deploy-to-neocities@v1
       with: 
         api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
         cleanup: false
-        dist_dir: _site
+        dist_dir: public
