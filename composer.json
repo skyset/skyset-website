@@ -2,7 +2,7 @@
     "name": "samue/skyset-website",
     "description": "website and portfolio",
     "type": "website",
-    "license": "propietary",
+    "license": " CC-BY-ND-4.0",
     "require": {
         "php": "^8.2"
     },
