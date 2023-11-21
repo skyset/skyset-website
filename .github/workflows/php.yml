@@ -40,7 +40,6 @@ jobs:
     - name: Build PHP
       uses: "php-actions/php-build@v1"
       with:
-        php-version: 8.1.2
         dir: public
 
     # When the dist_dir is ready, deploy it to neocities
