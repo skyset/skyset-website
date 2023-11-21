@@ -2,6 +2,7 @@
     "name": "samue/skyset-website",
     "description": "website and portfolio",
     "type": "website",
+    "license": "propietary",
     "require": {
         "php": "^8.2"
     },
