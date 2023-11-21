@@ -4,7 +4,7 @@
     ?>
     <span>
         <p>Copyright &copy; 2023 Samuel Tyler</p>
-        <p> <a href="mailto:samuel.e.tyler@gmail.com">samuel.e.tyler@gmail.com</a></p>
+        <p> <a href="mailto:contact@skyset.page">contact@skyset.page</a></p>
         <p>
             <span class="inline small">Site source on
                 <a href="https://github.com/skyset/skyset-website">
