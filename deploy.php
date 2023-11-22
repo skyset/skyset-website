@@ -6,7 +6,8 @@ foreach ($dir as $fileinfo) {
         $staticfile = fopen('public/' . $fileinfo->getBasename('.php') . '.html', 'w');
 
         ob_start();
-        include $fileinfo->getFilename();
+        $staticcontents = include ($fileinfo->getFilename());
+        echo $staticcontents;
         $content = ob_get_contents();
         ob_end_clean();
 
