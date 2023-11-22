@@ -1,9 +1,11 @@
 <?php
 
+$publicdirectory = './public/';
+
 $dir = new DirectoryIterator(dirname('pages'));
 foreach ($dir as $fileinfo) {
     if (!$fileinfo->isDot() && !$fileinfo->isDir() && $fileinfo->getType() == 'php') {
-        $staticfile = fopen('/home/runner/work/skyset-website/skyset-website/public/' . $fileinfo->getBasename('.php') . '.html', 'w');
+        $staticfile = fopen($publicdirectory . $fileinfo->getBasename('.php') . '.html', 'w');
 
         ob_start();
         $staticcontents = include ($fileinfo->getFilename());
