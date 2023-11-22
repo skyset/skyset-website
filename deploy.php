@@ -3,7 +3,7 @@
 $dir = new DirectoryIterator(dirname('pages'));
 foreach ($dir as $fileinfo) {
     if (!$fileinfo->isDot() && !$fileinfo->isDir()) {
-        $staticfile = fopen($fileinfo->getBasename('.php') . '.html', 'w');
+        $staticfile = fopen('public/' . $fileinfo->getBasename('.php') . '.html', 'w');
 
         ob_start();
         include $fileinfo->getFilename();

@@ -39,7 +39,7 @@ jobs:
         coverage: none
 
     - name: Build PHP Page Files
-      run: php '../deploy.php'
+      run: php 'deploy.php'
 
     # When the dist_dir is ready, deploy it to neocities
     - name: Deploy to neocities
