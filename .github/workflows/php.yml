@@ -32,10 +32,14 @@ jobs:
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
 
-    - uses: actions/upload-artfact@v3
+    - name: Use Node.js
+      uses: actions/setup-node@v3
       with:
-        name: public
-        path: public
+        node-version: lts/*
+    - name: Install deps and build
+      run: |
+        npm i
+        npm run build
 
     # When the dist_dir is ready, deploy it to neocities
     - name: Deploy to neocities
